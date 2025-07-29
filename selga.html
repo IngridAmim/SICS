@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+
+  <title>SEGOF</title>
+
+  <script defer src="script.js"></script>
+</head>
+
+<body id="topo">
+  
+<div class="d-flex flex-column flex-shrink-0 p-3  sidebar-custom" style="width: 280px; height: 100vh; position: fixed;">
+ <a href="#" class="d-flex align-items-center gap-2 text-dark text-decoration-none">
+  
+  <span class="fs-5 fw-bold">Menu</span>
+</a>
+
+
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+  
+    <li class="nav-item">
+  <a href="#visao" class="nav-link active">
+   Atribuições
+  </a>
+  </li>
+    
+  <li>
+  <a href="#unidades" class="nav-link text-dark">
+  Unidades
+  </a>
+  </li>
+    
+  <li>
+  <a href="#contato" class="nav-link text-dark">
+  Contato
+  </a>
+  </li>
+    
+  <li>
+  <a href="home.html" class="nav-link text-dark">
+  Página Inicial
+  </a>
+  </li>
+
+  </ul>
+  <hr>
+  
+</div>
+
+
+<main>
+   
+    <header>
+     
+      <h1>Descubra a <span class="highlight-text">SELGA</span> do TJAC</h1>
+      <h2>Secretaria de Logística e Gestão Administrativa</h2>
+      
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar unidade ou divisão..." />
+        
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="search-info">
+      <p>RESOLUÇÃO Nº 331, DE 10 ABRIL DE 2025.</p>
+      </div>
+
+    </header>
+
+<section id="visao" class="section landing">
+      
+      <h2>Atribuições</h2>
+      
+      <div style="margin-top: 50px;">
+
+
+  <ul>
+    
+      <li>
+      <details>
+      <summary>Planejar, organizar e coordenar as ações de logística e gestão administrativa, garantindo suporte às unidades do Tribunal de Justiça.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Assegurar a eficiência na aquisição, armazenagem, distribuição e descarte de bens e materiais.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Supervisionar a execução das contratações e gestão de contratos administrativos.</summary>
+      </details>
+      </li>
+   
+      <li>
+      <details>
+      <summary>Promover a otimização e integração dos processos de logística e gestão administrativa.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Garantir a conformidade das atividades de logística do Poder Judiciário do Estado do Acre com a legislação vigente. </summary>
+      </details>
+      </li>
+      
+     
+  </ul>
+</section>
+
+
+<section id="unidades" class="section">
+    
+    <h2>Unidades Organizacionais</h2> <br>
+    
+     <!-- Unidades em Cards -->
+    <section id="unidades">
+      
+      <div class="row g-4">
+
+      
+        <div class="col-md-4">
+          <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Gabinete da Secretaria de Logística e Gestão Administrativa</h5>
+              <p class="card-text">GASEL • gasel@tjac.jus.br</p>
+              <p class="card-text">Assessoria, coordenação, monitoramento e gestão da secretaria.</p>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-gabinete')">Atribuições</button>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Equipe de Planejamento de Contratações</h5>
+              <p class="card-text">EPCON • epcon@tjac.jus.br</p>
+              <p class="card-text">Planejamento, definição e acompanhamento de contratações públicas.</p>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-epcon')">Atribuições</button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Gestão de Bens e Materiais</h5>
+              <p class="card-text">SUGEM • sugem@tjac.jus.br</p>
+              <p class="card-text">Gestão, controle e logística de bens e materiais.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-sugem')">Atribuições</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-sugem1')">DIBEM</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-sugem2')">DIVAD</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-sugem3')">DIINV</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-sugem4')">DIDEB</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-sugem5')">DIGAT</button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Gestão de Compras</h5>
+              <p class="card-text">SUGEC • sugec@tjac.jus.br</p>
+              <p class="card-text">Coordenação, documentação, fiscalização e compliance em contratações.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-sugec')">Atribuições</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-sugec1')">DIINC</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-sugec2')">DICON</button>
+              
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Comissões Permanentes de Licitação</h5>
+              <p class="card-text">CPLI's</p>
+              <p class="card-text">Publicação, condução e julgamento de licitações.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-cpli')">Atribuições</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-cpli1')">CPLI1</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-cpli2')">CPLI2</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-cpli3')">Apoio Operacional</button>
+              
+            </div>
+          </div>
+        </div>
+
+       
+
+      </div>
+    </section>
+
+<!-- Modais com atribuições detalhadas -->
+    <div id="modal-gabinete" class="modal-window">
+      <h5>Gabinete da Secretaria de Logística e Gestão Administrativa</h5><hr>
+      <ul>
+        <li>Assessorar a secretaria no desempenho de suas funções administrativas e técnicas.</li>
+        <li>Coordenar o fluxo de informações e processos entre as unidades subordinadas.</li>
+        <li>Elaborar relatórios gerenciais e consolidar informações sobre as atividades da Secretaria.</li>
+        <li>Acompanhar e monitorar o cumprimento das metas institucionais.</li>
+        <li>Coordenar a atuação da Equipe de Planejamento da Contratação.</li>
+      </ul>
+      <button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-epcon" class="modal-window">
+      <h5>Equipe de Planejamento de Contratações</h5><hr>
+      <ul>
+        <li>Elaborar Estudos Técnicos Preliminares (ETP) e planejar as aquisições e contratações.</li>
+        <li>Definir o escopo, cláusulas e riscos associados às contratações.</li>
+        <li>Selecionar as modalidades de licitação adequadas para os processos.</li>
+        <li>Garantir a conformidade com as normas legais e regulamentares.</li>
+        <li>Acompanhar o planejamento e a execução de cada contratação.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-sugem" class="modal-window">
+      <h5>Subsecretaria de Gestão de Bens e Materiais</h5><hr>
+      <ul>
+        <li>Planejar e controlar a aquisição, estocagem e distribuição de bens e materiais.</li>
+        <li>Monitorar a qualidade e o uso dos bens adquiridos.</li>
+        <li>Promover a gestão de inventário e o desfazimento de bens inservíveis.</li>
+        <li>Garantir a conservação e segurança dos materiais armazenados.</li>
+        <li>Otimizar processos logísticos relacionados à gestão de bens e materiais.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-sugec" class="modal-window">
+      <h5>Subsecretaria de Gestão de Compras</h5><hr>
+      <ul>
+        <li>Coordenar e supervisionar os processos de aquisição de bens e serviços.</li>
+        <li>Elaborar termos de referência, minutas de editais e outros documentos necessários às contratações.</li>
+        <li>Monitorar e fiscalizar contratos administrativos e atas de registro de preços.</li>
+        <li>Assegurar o cumprimento das normativas legais e regulamentares aplicáveis às contratações.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-cpli" class="modal-window">
+      <h5>Comissões Permanentes de Licitação</h5><hr>
+      <ul>
+        <li>Realizar a publicação de editais e abertura de propostas.</li>
+        <li>Conduzir os julgamentos das licitações.</li>
+        <li>Decidir sobre intercorrências nos certames e presidir as sessões de licitação.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+<!-- Modais com as DIVISÕES detalhadas -->
+
+    <div id="modal-sugem1" class="modal-window">
+      <h5>Divisão de Planejamento de Bens e Materiais</h5><hr>
+      <ul>
+        <li>Analisar dados históricos de consumo, tendências de mercado e previsões de atividades para estimar a quantidade de materiais cuja aquisição será necessária.</li>
+        <li>Planejar a aquisição de bens e materiais e definir o cronograma de reabastecimento.</li>
+        <li>Realizar a gestão de estoque.</li>
+        <li>Realizar análises de desempenho e eficiência dos processos de planejamento e controle de materiais.</li>
+        <li>Elaborar cotações e mapas de preços, bem como encaminhá-las para análise orçamentária.</li>
+        <li>Implementar práticas de gestão de riscos para garantir a continuidade no abastecimento.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-sugem2" class="modal-window">
+      <h5>Divisão Armazenamento e Distribuição de Bens e Materiais</h5><hr>
+      <ul>
+        <li>Realizar recepção, registro de entrada, teste e certificação de qualidade dos materiais adquiridos.</li>
+        <li>Registrar e corrigir não conformidades identificadas nos bens.</li>
+        <li>Monitorar o uso dos materiais e avaliar fornecedores periodicamente.</li>
+        <li>Monitorar continuamente os níveis de estoque.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-suexedv1" class="modal-window">
+      <h5>SUEXE – Divisão de Controle Interno</h5><hr>
+      <ul>
+        <li>Verificação documental dos pagamentos.</li>
+        <li>Prevenção de erros e irregularidades.</li>
+        <li>Auditorias internas financeiras.</li>
+        <li>Ações corretivas para execução.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-suexedv2" class="modal-window">
+      <h5>SUEXE – Divisão de Execução</h5><hr>
+      <ul>
+        <li>Processamento de pagamentos e folhas.</li>
+        <li>Empenhos, liquidações e desembolsos.</li>
+        <li>Conformidade com planejamento.</li>
+        <li>Eficiência financeira nos desembolsos.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-suexedv3" class="modal-window">
+      <h5>SUEXE – Divisão de Tesouraria</h5><hr>
+      <ul>
+        <li>Administração do fluxo de caixa.</li>
+        <li>Conciliação bancária.</li>
+        <li>Aplicação de recursos financeiros.</li>
+        <li>Relacionamento com instituições.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-subac1" class="modal-window">
+      <h5>SUBAC – Divisão de Arrecadação</h5><hr>
+      <ul>
+        <li>Monitoramento de receitas judiciais e extrajudiciais.</li>
+        <li>Relatórios de desempenho.</li>
+        <li>Estratégias de aumento de arrecadação.</li>
+        <li>Melhoria de processos informatizados.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-subac2" class="modal-window">
+      <h5>SUBAC – Divisão de Custos</h5><hr>
+      <ul>
+        <li>Análise de custos internos.</li>
+        <li>Desenvolvimento de rateios.</li>
+        <li>Relatórios financeiros detalhados.</li>
+        <li>Estratégias de eficiência e controle de custos.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+      <!------------------------------------------------------------------------------------------------------------------->
+
+  <script src="script.js"></script>
+  
+  <!-- RODAPÉ -->
+<footer class="footer" id="contato">
+  <div class="footer-container">
+
+    <!-- Lado Esquerdo -->
+    <div class="footer-left">
+      <p><strong>Secretaria de Gestão Orçamentária e Finanças - SEGOF</strong></p>
+      <p>Sede Administrativa - Térreo</p>
+
+    <div class="footer-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+      <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+      <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+      </svg>
+        
+      <span id="email-text">segof@tjac.jus.br</span>
+      <button onclick="copiarTexto('email-text')" class="copy-icon-btn" title="Copiar e-mail">
+      <i class="fas fa-copy"></i>
+      </button>
+    </div>
+
+    <div class="footer-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+      </svg>
+      <span id="telefone-text">(68) 99249-9959</span>
+      <button onclick="copiarTexto('telefone-text')" class="copy-icon-btn" title="Copiar telefone">
+      <i class="fas fa-copy"></i>
+      </button>
+      </div>
+
+      <p id="copy-message" style="color: green; display: none;">Copiado com sucesso!</p>
+  </div>
+
+    <!-- Lado Direito -->
+    <div class="footer-right">
+    <a href="#topo" class="top-link">Voltar ao topo</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  const links = document.querySelectorAll('.nav-link');
+
+  links.forEach(link => {
+    link.addEventListener('click', function () {
+      links.forEach(l => l.classList.remove('active', 'text-white', 'bg-primary'));
+      this.classList.add('active', 'text-white', 'bg-primary');
+    });
+  });
+</script>
+
+
+
+</body>
+</html>

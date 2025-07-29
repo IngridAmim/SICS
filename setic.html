@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+
+  <title>SEGOF</title>
+
+  <script defer src="script.js"></script>
+</head>
+
+<body id="topo">
+  
+<div class="d-flex flex-column flex-shrink-0 p-3  sidebar-custom" style="width: 280px; height: 100vh; position: fixed;">
+ <a href="#" class="d-flex align-items-center gap-2 text-dark text-decoration-none">
+  
+  <span class="fs-5 fw-bold">Menu</span>
+</a>
+
+
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+  
+    <li class="nav-item">
+  <a href="#visao" class="nav-link active">
+   Atribuições
+  </a>
+  </li>
+    
+  <li>
+  <a href="#unidades" class="nav-link text-dark">
+  Unidades
+  </a>
+  </li>
+    
+  <li>
+  <a href="#contato" class="nav-link text-dark">
+  Contato
+  </a>
+  </li>
+    
+  <li>
+  <a href="home.html" class="nav-link text-dark">
+  Página Inicial
+  </a>
+  </li>
+
+  </ul>
+  <hr>
+  
+</div>
+
+
+<main>
+   
+    <header>
+     
+      <h1>Descubra a <span class="highlight-text">SEGOF</span> do TJAC</h1>
+      <h2>Secretaria de Gestão Orçamentária e Finanças</h2>
+      
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar unidade ou divisão..." />
+        
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="search-info">
+      <p>RESOLUÇÃO Nº 331, DE 10 ABRIL DE 2025.</p>
+      </div>
+
+    </header>
+
+<section id="visao" class="section landing">
+      
+      <h2>Atribuições</h2>
+      
+      <div style="margin-top: 50px;">
+
+
+  <ul>
+    
+      <li>
+      <details>
+      <summary>Coordenar e supervisionar as atividades relacionadas ao planejamento, execução e controle do orçamento, das finanças e dos custos do Tribunal.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Administrar os recursos orçamentários e financeiros do Poder Judiciário do Estado do Acre.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Assegurar a conformidade das operações financeiras e orçamentárias com as normas legais e regulatórias.</summary>
+      </details>
+      </li>
+   
+      <li>
+      <details>
+      <summary>Planejar e gerir os recursos financeiros de forma eficiente e eficaz, garantindo a transparência e o atendimento aos objetivos estratégicos do Tribunal.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Prestar contas aos órgãos fiscalizadores, assegurando a correta aplicação dos recursos públicos. </summary>
+      </details>
+      </li>
+      
+      <li>
+      <details>
+      <summary>Propor estratégias de eficiência financeira e melhoria contínua nos processos financeiros, orçamentários e contábeis.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Elaborar e revisar permanentemente plano de ampliação das receitas arrecadadas pelo Poder Judiciário do Estado do Acre. </summary>
+      </details>
+      </li>
+
+      <li>
+      <details>
+      <summary>Assinar notas de empenho, notas de liquidação e ordens de pagamento.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Autorizar suprimento de fundos a servidores, bem como aprovar a respectiva prestação de contas.</summary>
+      </details>
+      </li>
+    
+      <li>
+      <details>
+      <summary>Despachar com o Presidente do Tribunal de Justiça e com o Secretário Geral sobre os assuntos orçamentário-financeiros, especialmente quanto à arrecadação e destinação dos recursos financeiros pertencentes ao Poder Judiciário do Estado do Acre.</summary>
+      </details>
+      </li>
+  </ul>
+</section>
+
+
+<section id="unidades" class="section">
+    
+    <h2>Unidades Organizacionais</h2> <br>
+    
+     <!-- Unidades em Cards -->
+    <section id="unidades">
+      
+      <div class="row g-4">
+
+        <!-- Gabinete -->
+        <div class="col-md-4">
+          <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Gabinete da Secretaria</h5>
+              <p class="card-text">GASEF • gasef@tjac.jus.br</p>
+              <p class="card-text">Assessoramento, coordenação, relatórios e articulação interna.</p>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-gabinete')">Atribuições</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUPLA -->
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Planejamento e Gestão Orçamentária</h5>
+              <p class="card-text">SUPLA • supla@tjac.jus.br</p>
+              <p class="card-text">Planejamento, execução e monitoramento orçamentário.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-supladiv1')">Divisão P&A</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-supladiv2')">Divisão Execução</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUCON -->
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Contabilidade</h5>
+              <p class="card-text">SUCON</p>
+              <p class="card-text">Contabilização, balancetes, demonstrativos e escrituração.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-sucondv1')">Divisão Cont. Pública</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-sucondv2')">Divisão Prestação</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUEXE -->
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Execução Financeira</h5>
+              <p class="card-text">SUEXE</p>
+              <p class="card-text">Pagamentos, controle interno, tesouraria e fluxo de caixa.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv1')">Controles Internos</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv2')">Execução</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-suexedv3')">Tesouraria</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUBAC -->
+        <div class="col-md-4">
+          <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Arrecadação e Custos</h5>
+              <p class="card-text">SUBAC</p>
+              <p class="card-text">Gestão de receitas e análise de custos.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-subacdv1')">Arrecadação</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-subacdv2')">Custos</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUEXE -->
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Execução Financeira</h5>
+              <p class="card-text">SUEXE</p>
+              <p class="card-text">Pagamentos, controle interno, tesouraria e fluxo de caixa.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv1')">Controles Internos</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv2')">Execução</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-suexedv3')">Tesouraria</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUEXE -->
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Execução Financeira</h5>
+              <p class="card-text">SUEXE</p>
+              <p class="card-text">Pagamentos, controle interno, tesouraria e fluxo de caixa.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv1')">Controles Internos</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv2')">Execução</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-suexedv3')">Tesouraria</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUEXE -->
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Execução Financeira</h5>
+              <p class="card-text">SUEXE</p>
+              <p class="card-text">Pagamentos, controle interno, tesouraria e fluxo de caixa.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv1')">Controles Internos</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv2')">Execução</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-suexedv3')">Tesouraria</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUEXE -->
+        <div class="col-md-4">
+         <div class="card-custom h-100" >
+            <div class="card-body">
+              <h5 class="card-title">Subsecretaria de Execução Financeira</h5>
+              <p class="card-text">SUEXE</p>
+              <p class="card-text">Pagamentos, controle interno, tesouraria e fluxo de caixa.</p>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv1')">Controles Internos</button>
+              <button class="btn btn-outline-primary me-2" onclick="openModal('modal-suexedv2')">Execução</button>
+              <button class="btn btn-outline-primary" onclick="openModal('modal-suexedv3')">Tesouraria</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modais com atribuições detalhadas -->
+    <div id="modal-gabinete" class="modal-window">
+      <h5>Gabinete – Atribuições</h5><hr>
+      <ul>
+        <li>Assessorar o Secretário de Gestão Orçamentária e Finanças.</li>
+        <li>Coordenação de fluxo entre unidades subordinadas.</li>
+        <li>Consolidação de relatórios gerenciais.</li>
+        <li>Cumprimento de prazos e normativas.</li>
+        <li>Articulação entre setores do TJAC.</li>
+      </ul>
+      <button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-supladiv1" class="modal-window">
+      <h5>SUPLA – Divisão Planejamento e Acompanhamento</h5><hr>
+      <ul>
+        <li>Definição de metas orçamentárias.</li>
+        <li>Elaboração de proposta anual.</li>
+        <li>Coleta de dados para planejamento.</li>
+        <li>Acompanhamento de execução orçamentária.</li>
+        <li>Relatórios para controle interno e externo.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-supladiv2" class="modal-window">
+      <h5>SUPLA – Divisão de Execução Orçamentária</h5><hr>
+      <ul>
+        <li>Acompanhamento da execução em convênios, fundos e unidades.</li>
+        <li>Análises periódicas e ajustes orçamentários.</li>
+        <li>Suporte técnico às unidades administrativas.</li>
+        <li>Garantia de uso eficiente dos recursos.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-sucondv1" class="modal-window">
+      <h5>SUCON – Divisão Contabilidade Pública</h5><hr>
+      <ul>
+        <li>Registro contábil de atos administrativos.</li>
+        <li>Elaboração de balancetes e demonstrações.</li>
+        <li>Atualização nas normas contábeis.</li>
+        <li>Controle patrimonial e integração de dados.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-sucondv2" class="modal-window">
+      <h5>SUCON – Divisão de Prestação de Contas</h5><hr>
+      <ul>
+        <li>Relatórios periódicos para órgãos de controle.</li>
+        <li>Conformidade legal nas prestações.</li>
+        <li>Ações corretivas e preventivas.</li>
+        <li>Organização e envio de prestações anuais.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-suexedv1" class="modal-window">
+      <h5>SUEXE – Divisão de Controle Interno</h5><hr>
+      <ul>
+        <li>Verificação documental dos pagamentos.</li>
+        <li>Prevenção de erros e irregularidades.</li>
+        <li>Auditorias internas financeiras.</li>
+        <li>Ações corretivas para execução.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-suexedv2" class="modal-window">
+      <h5>SUEXE – Divisão de Execução</h5><hr>
+      <ul>
+        <li>Processamento de pagamentos e folhas.</li>
+        <li>Empenhos, liquidações e desembolsos.</li>
+        <li>Conformidade com planejamento.</li>
+        <li>Eficiência financeira nos desembolsos.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-suexedv3" class="modal-window">
+      <h5>SUEXE – Divisão de Tesouraria</h5><hr>
+      <ul>
+        <li>Administração do fluxo de caixa.</li>
+        <li>Conciliação bancária.</li>
+        <li>Aplicação de recursos financeiros.</li>
+        <li>Relacionamento com instituições.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-subacdv1" class="modal-window">
+      <h5>SUBAC – Divisão de Arrecadação</h5><hr>
+      <ul>
+        <li>Monitoramento de receitas judiciais e extrajudiciais.</li>
+        <li>Relatórios de desempenho.</li>
+        <li>Estratégias de aumento de arrecadação.</li>
+        <li>Melhoria de processos informatizados.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+    <div id="modal-subacdv2" class="modal-window">
+      <h5>SUBAC – Divisão de Custos</h5><hr>
+      <ul>
+        <li>Análise de custos internos.</li>
+        <li>Desenvolvimento de rateios.</li>
+        <li>Relatórios financeiros detalhados.</li>
+        <li>Estratégias de eficiência e controle de custos.</li>
+      </ul><button class="btn btn-primary" onclick="closeModal()">Fechar</button>
+    </div>
+
+      <!------------------------------------------------------------------------------------------------------------------->
+
+  <script src="script.js"></script>
+  
+  <!-- RODAPÉ -->
+<footer class="footer" id="contato">
+  <div class="footer-container">
+
+    <!-- Lado Esquerdo -->
+    <div class="footer-left">
+      <p><strong>Secretaria de Gestão Orçamentária e Finanças - SEGOF</strong></p>
+      <p>Sede Administrativa - Térreo</p>
+
+    <div class="footer-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+      <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+      <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+      </svg>
+        
+      <span id="email-text">segof@tjac.jus.br</span>
+      <button onclick="copiarTexto('email-text')" class="copy-icon-btn" title="Copiar e-mail">
+      <i class="fas fa-copy"></i>
+      </button>
+    </div>
+
+    <div class="footer-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+      </svg>
+      <span id="telefone-text">(68) 99249-9959</span>
+      <button onclick="copiarTexto('telefone-text')" class="copy-icon-btn" title="Copiar telefone">
+      <i class="fas fa-copy"></i>
+      </button>
+      </div>
+
+      <p id="copy-message" style="color: green; display: none;">Copiado com sucesso!</p>
+  </div>
+
+    <!-- Lado Direito -->
+    <div class="footer-right">
+    <a href="#topo" class="top-link">Voltar ao topo</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  const links = document.querySelectorAll('.nav-link');
+
+  links.forEach(link => {
+    link.addEventListener('click', function () {
+      links.forEach(l => l.classList.remove('active', 'text-white', 'bg-primary'));
+      this.classList.add('active', 'text-white', 'bg-primary');
+    });
+  });
+</script>
+
+
+
+</body>
+</html>

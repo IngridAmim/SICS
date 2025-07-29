@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consulta Interna - Secretarias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --tj-bordo: #6e1414;
+      --tj-bordo-hover: #5c1010;
+      --tj-bege: #f9f7f5;
+      --tj-text: #2e2e2e;
+    }
+
+    body {
+      
+      font-family: 'Merriweather', serif;
+      background-color: var(--tj-bege);
+      color: var(--tj-text);
+    }
+
+    .navbar {
+      background-color: var(--tj-bordo);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #6e1414 0%, #9a1e1e 100%);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      color: var(--tj-bordo);
+      text-align: center;
+    }
+
+    .card-custom {
+      background-color: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 14px;
+      padding: 1.2rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-title {
+      color: var(--tj-bordo);
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .card-text {
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .text-decoration-none {
+      text-decoration: none !important;
+    }
+
+    .btn-siglario {
+      margin-top: 40px;
+    }
+
+    .btn-outline-primary {
+      color: var(--tj-bordo);
+      border-color: var(--tj-bordo);
+      font-weight: 500;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--tj-bordo-hover);
+      color: white;
+      border-color: var(--tj-bordo-hover);
+    }
+    
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+    footer {
+      background-color: var(--tj-bordo);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <!-- Dentro da navbar -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3" href="#" style="height: 80px;">
+  <img src="brasao-tjac.png" alt="Brasão TJAC" height="80" style="object-fit: contain;">
+  <span class="fs-4">Consulta TJAC</span>
+</a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="siglario.html">Siglário</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1> <br> <br> Sistema Interno de Consulta das Secretarias</h1>
+      <p>Acesse informações institucionais das secretarias do TJAC de forma rápida, clara e eficiente.</p>
+    </div>
+  </section>
+
+  <!-- Cartões -->
+  <section class="container">
+    <h2 class="section-title"> Explorar Secretarias</h2>
+    <div class="row g-4">
+
+      <!-- Cards -->
+      <div class="col-md-4">
+        <a href="seger.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SEGER</h5>
+              <p class="card-text">Secretaria-Geral<br><small>Clique para explorar.</small></p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="segov.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SEGOV</h5>
+              <p class="card-text">Secretaria de Governança e Gestão Estratégica</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="setic.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SETIC</h5>
+              <p class="card-text">Secretaria de Tecnologia da Informação e Comunicação</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="sejud.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SEJUD</h5>
+              <p class="card-text">Secretaria Judiciária</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="secom.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SECOM</h5>
+              <p class="card-text">Secretaria de Comunicação Social</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="segep.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SEGEP</h5>
+              <p class="card-text">Secretaria de Gestão de Pessoas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="segof.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SEGOF</h5>
+              <p class="card-text">Secretaria de Gestão Orçamentária e Finanças</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="seinf.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SEINF</h5>
+              <p class="card-text">Secretaria de Infraestrutura e Atendimento ao Usuário</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="selga.html" class="text-decoration-none">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title">SELGA</h5>
+              <p class="card-text">Secretaria de Logística e Gestão Administrativa</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Botão para o Siglário -->
+    <div class="text-center btn-siglario">
+      <a href="siglario.html" class="btn btn-outline-primary btn-lg">Acessar Siglário Completo</a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Tribunal de Justiça do Estado do Acre - Consulta Interna</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    
+  </script>
+  
+ 
+
+</body>
+</html>
